@@ -1,0 +1,23 @@
+# Acabado:
+
+
+
+# Enunciado 413_Dispositivo.txt
+
+# 413_Dispositivo.xml
+# 413_Dispositivo.xsd
+
+# Enunciado 414_Nota.txt
+
+# 414_Nota_1.xml
+# 414.xsd
+
+# Enunciado 415_Calificacion_1.txt
+
+# 415_Calificacion_1.xml
+# 415.xsd
+
+# Enunciado 416_dominio.txt
+
+# 416_dominio.xml
+# 416.xsd
