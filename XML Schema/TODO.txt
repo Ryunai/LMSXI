@@ -1,8 +1,3 @@
-# Enunciado 417_vehiculos.txt
-
-# 417_vehiculos.xml
-# 417.xsd
-
 # Enunciado 421_cartelera.txt
 
 # 421_cartelera.xml
