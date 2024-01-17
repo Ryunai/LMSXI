@@ -1,0 +1,92 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="vehiculos">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="vehiculo" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="vehiculo">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="nombre"/>
+            <xs:element ref="modelo"/>
+            <xs:element ref="fabricacion"/>
+            <xs:element ref="modificaciones"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+
+<xs:element name="fabricacion">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="inicio"/>
+            <xs:element name="fin"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="inicio">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="dia"/>
+            <xs:element ref="mes"/>
+            <xs:element ref="anyo"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="fin">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="dia" minOccurs="2" maxOccurs="2"/>
+            <xs:element ref="mes" minOccurs="2" maxOccurs="2"/>
+             <xs:element ref="anyo" minOccurs="4" maxOccurs="4"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="modificaciones">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="modificacion" minOccurs="1" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+
+<xs:element name="nombre"/>
+<xs:element name="modelo"/>
+
+<xs:element name="dia">
+  <xs:simpleType>
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="01"/>
+      <xs:maxInclusive value="31"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="mes">
+  <xs:simpleType>
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="01"/>
+      <xs:maxInclusive value="12"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="anyo">
+  <xs:simpleType>
+    <xs:restriction base="xs:int">
+      <xs:minInclusive value="1900"/>
+      <xs:maxInclusive value="2099"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+<xs:element name="modificacion"/>
+
+</xs:schema>
