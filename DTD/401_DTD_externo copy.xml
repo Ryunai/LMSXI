@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-model href="401.dtd" type="application/xml-dtd"?>
+
+
+
+<!DOCTYPE libro [
+    <!ELEMENT libro (autor, titulo)>
+    <!ELEMENT autor (#PCDATA)>
+    <!ELEMENT titulo (#PCDATA)>
+]>
+
+<libro>
+    <autor>Miguel de Cervantes Saavedra</autor>
+    <titulo>El Quijote de la Mancha</titulo>
+</libro>

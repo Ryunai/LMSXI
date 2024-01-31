@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE paneles [
+    <!ELEMENT paneles (evento+)>
+    <!ELEMENT evento (via, pk, retencion, sentido?, carrilescortados?)>
+    <!ATTLIST evento tipo CDATA #REQUIRED fecha CDATA #IMPLIED>
+    <!ELEMENT via (nombre, ref, origen, destino, (doble | sentido), carriles)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT ref (#PCDATA)>
+    <!ELEMENT origen (#PCDATA)>
+    <!ELEMENT destino (#PCDATA)>
+    <!ELEMENT doble EMPTY>
+    <!ELEMENT sentido (#PCDATA)>
+    <!ELEMENT carriles (#PCDATA)>
+    <!ELEMENT pk (#PCDATA)>
+    <!ELEMENT retencion EMPTY>
+    <!ATTLIST retencion long CDATA #REQUIRED>
+    <!ELEMENT carrilescortados EMPTY>
+    <!ATTLIST carrilescortados valor (1 | 2 | 3 | 4) #REQUIRED>
+]>
+
+
+<paneles>
+    
+    <evento tipo="Obra" fecha="2024-01-31">
+        <via>
+            <nombre>Via Principal</nombre>
+            <ref>A1</ref>
+            <origen>Ciudad A</origen>
+            <destino>Ciudad B</destino>
+            <doble/>
+            <carriles>4</carriles>
+        </via>
+        <pk>50</pk>
+        <retencion long="10"/>
+        <sentido>Norte</sentido>
+        <carrilescortados valor="2"/>
+    </evento>
+    <evento tipo="..." fecha="...">
+        <via>
+            <nombre>...</nombre>
+            <ref>...</ref>
+            <origen>...</origen>
+            <destino>...</destino>
+    <!--    <doble/>
+             o -->
+            <sentido>...</sentido>
+            <carriles>...</carriles>
+        </via>
+        <pk>...</pk>
+        <retencion long="..."/>
+        <sentido>...</sentido>
+        <carrilescortados valor="3"/>
+    </evento>
+    <evento tipo="..." fecha="...">
+        <via>
+            <nombre>...</nombre>
+            <ref>...</ref>
+            <origen>...</origen>
+            <destino>...</destino>
+    <!--    <doble/>
+             o -->
+            <sentido>...</sentido>
+            <carriles>...</carriles>
+        </via>
+        <pk>...</pk>
+        <retencion long="..."/>
+        <sentido>...</sentido>
+        <carrilescortados valor="2"/>
+    </evento>
+
+</paneles>

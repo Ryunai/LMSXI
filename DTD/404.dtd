@@ -1,0 +1,35 @@
+<!-- <!DOCTYPE factura []>  Eso no hace falta con standalone="no" me di cuenta gracias a chat gpt con el archivo 404gpt.dtd  -->
+
+<!ELEMENT factura (emision, vendedor, cliente, articulo+, descuento?)>
+
+<!ATTLIST factura id CDATA #REQUIRED>
+
+<!ELEMENT emision (#PCDATA)>
+
+<!ELEMENT vendedor (nombre)>
+<!ELEMENT nombre (#PCDATA)>
+
+<!ATTLIST vendedor id CDATA #REQUIRED>
+
+<!ELEMENT cliente (nombre, direccion, telefono*)>
+<!ELEMENT direccion (via, cp, localidad, provincia)>
+<!ELEMENT telefono EMPTY>
+<!ELEMENT via (#PCDATA)>
+<!ELEMENT cp (#PCDATA)>
+<!ELEMENT localidad (#PCDATA)>
+<!ELEMENT provincia (#PCDATA)>
+
+<!ATTLIST cliente id CDATA #REQUIRED>
+<!ATTLIST telefono num CDATA #REQUIRED>
+
+<!-- Los Atributos no hace falta indicarlos en !ELEMENT -->
+
+<!ELEMENT articulo (denominacion, precio, cantidad)>
+
+<!ATTLIST articulo id CDATA #REQUIRED>
+<!ATTLIST articulo iva CDATA #REQUIRED>
+
+<!ELEMENT denominacion (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT cantidad (#PCDATA)>
+<!ELEMENT descuento (#PCDATA)>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="409.dtd" type="application/xml-dtd"?>
+
+<equipos_de_baloncesto>
+    <equipo>
+        <nombre>Equipo A</nombre>
+        <ciudad>Ciudad A</ciudad>
+        <entrenador>Entrenador A</entrenador>
+        <jugadores>
+            <jugador posicion="Base">
+                <nombre>Jugador1A</nombre>
+                <nacionalidad>Nacionalidad1A</nacionalidad>
+            </jugador>
+            <jugador posicion="Escolta">
+                <nombre>Jugador2A</nombre>
+                <nacionalidad>Nacionalidad2A</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+
+    <equipo>
+        <nombre>Equipo B</nombre>
+        <ciudad>Ciudad B</ciudad>
+        <entrenador>Entrenador B</entrenador>
+        <jugadores>
+            <jugador posicion="Alero">
+                <nombre>Jugador1B</nombre>
+                <nacionalidad>Nacionalidad1B</nacionalidad>
+            </jugador>
+            <jugador posicion="Pivot">
+                <nombre>Jugador2B</nombre>
+                <nacionalidad>Nacionalidad2B</nacionalidad>
+            </jugador>
+        </jugadores>
+    </equipo>
+</equipos_de_baloncesto>
