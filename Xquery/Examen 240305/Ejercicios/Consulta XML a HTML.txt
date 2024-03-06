@@ -1,0 +1,4 @@
+10. De XML a HTML. Genera una tabla HTML:
+* con dos columnas
+** en una se muestra el usuario
+** en otra se muestra la ip
